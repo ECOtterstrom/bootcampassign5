@@ -30,7 +30,7 @@ function createTable() {
       hourNum.text(hours[i]);
       var taskInput = $('<textarea id="task" rows="2" cols="115">');
       taskText.append(taskInput);
-      var save = $('<button type="button" class="btn btn-secondary btn-lg"><i class="far fa-save"></i></button>');
+      var save = $('<button type="button" class="saveBtn btn-lg"><i class="far fa-save"></i></button>');
       saveBtn.append(save);
       tr.append(hourNum, taskText, saveBtn);
       $("#dayPlan").append(tr);
@@ -45,6 +45,7 @@ function createTable() {
   }
   currentDate();
 
+//btn btn-secondary btn-lg
 
 //Create row with hours col, task col, save button
 //Use for loop on the hours array to put one of the hours in the hours col, then create new rows with each subsequent hour

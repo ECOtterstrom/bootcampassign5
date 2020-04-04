@@ -21,6 +21,10 @@ textarea{
   border-bottom: 10px solid black;
 }
 
+#currentDay {
+  font-size: 35px;
+}
+
 .description{
   white-space: pre-wrap;
 }
@@ -70,6 +74,3 @@ textarea{
   transition: all .3s ease-in-out;
 }
 
-#currentDay {
-  font-size: 35px;
-}
