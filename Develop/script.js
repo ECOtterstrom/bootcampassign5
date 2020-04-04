@@ -18,18 +18,25 @@ var taskText = $("#taskText");
 var saveBtn = $("#saveBtn");
 
 //Array of hours
-var hours = ["9:00 a.m.", "10:00 a.m.", "11:00 a.m.", "12:00 p.m.", "1:00 p.m.", "2:00 p.m.","3:00 p.m.", "4:00 p.m.", "5:00 p.m."];
+var hours = ["9AM", "10AM", "11AM", "12PM", "1PM", "2PM","3PM", "4PM", "5PM"];
 
 //Function to create table
 function createTable() {
-  let table = $('<table>');
-  let tr = $('<tr>');
-    for (i=0, i < hours.length, i++){
-      hourNum.text(hours) + taskText + saveBtn
+    for (var i=0; i < hours.length; i++){
+      let tr = $('<tr>');
+      let hourNum = $('<td>');
+      let taskText = $('<td>');
+      let saveBtn = $('<td>');
+      hourNum.text(hours[i]);
+      var taskInput = $('<textarea id="task" rows="2" cols="150">');
+      taskText.append(taskInput);
+      var save = $('<button>');
+      saveBtn.append(save);
+      tr.append(hourNum, taskText, saveBtn);
+      $("#dayPlan").append(tr);
     }
   };
-  console.log(table);
-}
+  createTable();
 
 
 
