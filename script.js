@@ -38,14 +38,13 @@ function createTable() {
   };
   createTable();
 
-  //Function to call load the current date
+  //Function to call load the current date at top of screen
   function currentDate() {
     let date = moment().format("dddd, MMMM Do YYYY");
-    $('#currentDay').append(date);
-    
+    $('#currentDay').append(date); 
   }
   currentDate();
-  console.log(currentDate);
+
 
 //Create row with hours col, task col, save button
 //Use for loop on the hours array to put one of the hours in the hours col, then create new rows with each subsequent hour
