@@ -16,13 +16,18 @@ var dayStart
 var hourNum = $("#hourNum");
 var taskText = $("#taskText");
 var saveBtn = $("#saveBtn");
+
 //Array of hours
 var hours = ["9:00 a.m.", "10:00 a.m.", "11:00 a.m.", "12:00 p.m.", "1:00 p.m.", "2:00 p.m.","3:00 p.m.", "4:00 p.m.", "5:00 p.m."];
 
 //Function to create table
-function(createTable) {
+function createTable() {
   let table = $('<table>');
-  let tr = $('tr');
+  let tr = $('<tr>');
+    for (i=0, i < hours.length, i++){
+      hourNum.text(hours) + taskText + saveBtn
+    }
+  };
   console.log(table);
 }
 
