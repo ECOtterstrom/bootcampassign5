@@ -28,9 +28,9 @@ function createTable() {
       let taskText = $('<td>');
       let saveBtn = $('<td>');
       hourNum.text(hours[i]);
-      var taskInput = $('<textarea id="task" rows="2" cols="150">');
+      var taskInput = $('<textarea id="task" rows="2" cols="115">');
       taskText.append(taskInput);
-      var save = $('<button>');
+      var save = $('<button type="button" class="btn btn-secondary btn-md"><i class="far fa-save"></i></button>');
       saveBtn.append(save);
       tr.append(hourNum, taskText, saveBtn);
       $("#dayPlan").append(tr);
