@@ -45,15 +45,15 @@ function createTable() {
 
   //Function to save inputs to local storage
   $('.saveBtn').click(function(){
-    alert('Click!')
-    $('.input').click(function(){
-      alert('Inside click!')
+    // alert('Click!')
+    $('.input').each(function(){
+      alert($(this).val())
     });
   });
-
+console.log(task);
   // $('.input').click(function(){
   //   alert('Click2!')
-  // });
+  // })
   
 
   // $(document).ready(function(){
