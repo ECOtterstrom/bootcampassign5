@@ -13,13 +13,12 @@
 
 //Array of hours
 var hours = ["9AM", "10AM", "11AM", "12PM", "1PM", "2PM","3PM", "4PM", "5PM"];
-var tr, hourNum, taskText, saveBtn, taskInput, save, i
 
+var tr, hourNum, taskText, saveBtn, taskInput, save, i
 
 //Function to create table
 function createTable() {
   
-
     for (var i=0; i < hours.length; i++){
       tr = $('<tr>');
       hourNum = $('<td>');
@@ -37,24 +36,22 @@ function createTable() {
   };
   createTable();
 
-  //Function to clear local storage before adding new items  
-  function deleteItems() {
-    localStorage.clear();
-  }
-  deleteItems();
-    
   //Function to save inputs to local storage
+  
   $('.saveBtn').click(function(){
+
+    function deleteItems() {
+      localStorage.clear();
+    }
+    deleteItems();
       
-  $('textarea').each(function(){
-    var entry, value;
-    entry = $(this);
-    value = (entry.val()); 
-    localStorage.setItem(value, value);
-    //alert($(this).val())
+    $('textarea').each(function(){
+      value = ($(this).val()); 
+      localStorage.setItem(value, value);
     });
   });
-    console.log(localStorage);
+ 
+  console.log(localStorage);
 
   //Function to change colors of each row based on time (past, present, future)
   
