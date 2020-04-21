@@ -1,28 +1,18 @@
-Read Me for Work Day Planner Assignment
+Read Me for Work Day Planner
 
-This Work Day Planner was built on the following pseudo code:
-  1. Create a table - displays work hours 9-5 and save buttons, and inputs
-  2. Input rows store into local storage when save is pressed 
-  3. Change colors of each row based on time (past, present, future)
-  4. Individual inputs for each block
-  5. Display the current date at the top
-  6. Use Moment.js to format the date 
+HOW THE WORK DAY PLANNER FUNCTIONS:
+The Work Day Planner is a simple app for planning your work day.  You can enter in a task for each hour and save that task to local storage.  
+The task will remain in the page even upon refresh.  
 
-The Work Day Planner script.js file contains the following functions:
-  1. Function to create table - used to create the rows in the day planner body.  This function fulfills the following requirements:
-	 a. WHEN I scroll down, THEN I am presented with timeblocks for standard business hours
-	 b. WHEN I click into a timeblock, THEN I can enter an event
-	 
-  2. Function to clear local storage - used to clear local storage before adding new items, inside the function to save items to local storage
-  
-  3. Function to save items to local storage - when the Save button is clicked this saves task entries to local storage. This function fulfills the following requirements:
-     a. WHEN I click the save button for that timeblock, THEN the text for that event is saved in local storage  
- 
-	 
-  4. Function to set the current date - this function sets the current date in the jumbotron at the top of the Day Planner.  This function fulfills the following requirements:
-	 a.  WHEN I open the planner, THEN the current day is displayed at the top of the calendar
+During the work day, the current hour will be highlighted in green, so it will be simple
+to determine what meeting or task is scheduled now.  Hours that have already past will be colored gray, and hours that are yet to occur will 
+be colored blue.
 
-Unfulfilled Requirements:
-  1. WHEN I view the timeblocks for that day, THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-  2. WHEN I refresh the page, THEN the saved events persist
-	 
+MY CODING EXPERIENCE:
+I initially started building the table for the Work Day Planner solely in the javascript file, but decided that is was easier
+for me to build the table using HTML and code the data storage and interactivty in javascript.  
+
+The classes in the CSS file were helpful in giving clues about how to write the javascript.  The past, present, and future classes made it easier to
+figure out how to set up the colors for the times of day.
+
+I hope you enjoy using this simple Work Day Planner!
